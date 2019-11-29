@@ -1,0 +1,10 @@
+# Dependency directory
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Compiled files
+build/
+lib/*.js
+
