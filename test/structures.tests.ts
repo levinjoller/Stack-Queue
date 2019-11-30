@@ -14,7 +14,6 @@ describe("Data structures", () => {
             const result = testee.size();
             expect(result).to.equal(1);
         })
-
         it("with two elements where one gets deleted, has size", () => {
             const testee = new Queue();
             testee.enqueue("first element");
@@ -22,6 +21,18 @@ describe("Data structures", () => {
             testee.poll();
             const result = testee.size();
             expect(result).to.equal(1);
+        })
+        it("with no elements, is empty", () => {
+            const testee = new Queue();
+            const result = testee.isEmpty();
+            expect(result).to.equal(true);
+        })
+        it("with two elements, is not empty", () => {
+            const testee = new Queue();
+            testee.enqueue("first element");
+            testee.enqueue(5);
+            const result = testee.isEmpty();
+            expect(result).to.equal(false);
         })
     })
 
