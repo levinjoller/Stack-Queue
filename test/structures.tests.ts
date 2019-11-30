@@ -8,6 +8,21 @@ describe("Data structures", () => {
             const result = testee.size();
             expect(result).to.equal(0);
         })
+        it("with one element added, has size", () => {
+            const testee = new Queue();
+            testee.enqueue("first element");
+            const result = testee.size();
+            expect(result).to.equal(1);
+        })
+
+        it("with two elements where one gets deleted, has size", () => {
+            const testee = new Queue();
+            testee.enqueue("first element");
+            testee.enqueue(5);
+            testee.poll();
+            const result = testee.size();
+            expect(result).to.equal(1);
+        })
     })
 
     // describe("Factory", () => {
