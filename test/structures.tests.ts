@@ -22,6 +22,13 @@ describe("Data structures", () => {
             const result = testee.size();
             expect(result).to.equal(1);
         })
+        it("with two elements where one gets deleted, has value", () => {
+            const testee = new Queue();
+            testee.enqueue("first element");
+            testee.enqueue(5);
+            let result = testee.poll();
+            expect(result).to.equal("first element");
+        })
         it("with no elements, is empty", () => {
             const testee = new Queue();
             const result = testee.isEmpty();

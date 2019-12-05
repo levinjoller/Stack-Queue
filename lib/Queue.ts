@@ -11,8 +11,10 @@ export class Queue implements IDataScructure {
         this.queue = [...this.queue, value];
     }
 
-    public poll(){
+    public poll(): any{
+        let elementToPoll = this.queue[0];
         this.queue = [...this.queue.filter(x => x != this.queue[0])];
+        return elementToPoll;
     }
 
     public isEmpty() :boolean{
