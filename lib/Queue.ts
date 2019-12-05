@@ -20,4 +20,8 @@ export class Queue implements IDataScructure {
     public isEmpty() :boolean{
         return this.size() == 0 ? true : false;
     }
+
+    public peek(): any{
+        return this.queue[0];
+    }
 }

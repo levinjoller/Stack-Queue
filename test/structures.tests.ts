@@ -41,6 +41,13 @@ describe("Data structures", () => {
             const result = testee.isEmpty();
             expect(result).to.equal(false);
         })
+        it("with two elements, returns the first element", () => {
+            const testee = new Queue();
+            testee.enqueue(33);
+            testee.enqueue(5);
+            let result = testee.peek();
+            expect(result).to.equal(33);
+        })
     })
 
     // describe("Factory", () => {
