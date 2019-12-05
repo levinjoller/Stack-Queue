@@ -10,22 +10,22 @@ describe("Data structures", () => {
         })
         it("with one element added, has size", () => {
             const testee = new Queue();
-            testee.enqueue("first element");
+            testee.add("first element");
             const result = testee.size();
             expect(result).to.equal(1);
         })
         it("with two elements where one gets deleted, has size", () => {
             const testee = new Queue();
-            testee.enqueue("first element");
-            testee.enqueue(5);
+            testee.add("first element");
+            testee.add(5);
             testee.poll();
             const result = testee.size();
             expect(result).to.equal(1);
         })
         it("with two elements where one gets deleted, has value", () => {
             const testee = new Queue();
-            testee.enqueue("first element");
-            testee.enqueue(5);
+            testee.add("first element");
+            testee.add(5);
             let result = testee.poll();
             expect(result).to.equal("first element");
         })
@@ -36,15 +36,15 @@ describe("Data structures", () => {
         })
         it("with two elements, is not empty", () => {
             const testee = new Queue();
-            testee.enqueue("first element");
-            testee.enqueue(5);
+            testee.add("first element");
+            testee.add(5);
             const result = testee.isEmpty();
             expect(result).to.equal(false);
         })
         it("with two elements, returns the first element", () => {
             const testee = new Queue();
-            testee.enqueue(33);
-            testee.enqueue(5);
+            testee.add(33);
+            testee.add(5);
             let result = testee.peek();
             expect(result).to.equal(33);
         })
