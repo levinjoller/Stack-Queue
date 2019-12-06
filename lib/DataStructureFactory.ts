@@ -9,8 +9,7 @@ export class DataStructureFactory{
             case Structure.FIFO:               
                 return new Queue();
             default:
-                // return new Stack();
-                break;
+                return new Stack();
         }
     }
 }

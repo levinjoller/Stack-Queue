@@ -91,10 +91,15 @@ describe("Data structures", () => {
         });
     });
     describe("Factory", () => {
-        it("can create Queue", () => {
+        it("creates an element with structure 'FIFO', has an instance of", () => {
             const structureType = Structure.FIFO;
             const result = DataStructureFactory.create(structureType);
             expect(result).to.be.an.instanceOf(Queue);
+        });
+        it("creates an element with structure 'LIFO', has an instance of", () => {
+            const structureType = Structure.LIFO;
+            const result = DataStructureFactory.create(structureType);
+            expect(result).to.be.an.instanceOf(Stack);
         });
     });
 });
