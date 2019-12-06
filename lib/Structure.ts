@@ -1,4 +1,4 @@
-enum Structure{
-    FIFO = 1,
+export enum Structure{
+    FIFO = 0,
     LIFO
 }
