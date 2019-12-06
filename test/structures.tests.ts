@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import { Queue } from "../lib/Queue";
+import { Stack } from "../lib/Stack";
 import { DataStructureFactory } from "../lib/DataStructureFactory";
 import { Structure } from "../lib/Structure";
 
@@ -49,6 +50,44 @@ describe("Data structures", () => {
             testee.add(5);
             const result = testee.peek();
             expect(result).to.equal(33);
+        });
+    });
+    describe("Stack", () => {
+        it("has size", () => {
+            const testee = new Stack();
+            const result = testee.size();
+            expect(result).to.equal(0);
+        });
+        it("with two elements added, has size", () => {
+            const testee = new Stack();
+            testee.add(12);
+            testee.add("second Element");
+            const result = testee.size();
+            expect(result).to.equal(2);
+        });
+        it("with one element, is empty", () => {
+            const testee = new Stack();
+            testee.add("frist element");
+            const result = testee.isEmpty();
+            expect(result).to.equal(false);
+        });
+        it("the first element to extract, has value", () => {
+            const testee = new Stack();
+            testee.add("last element");
+            testee.add("second element");
+            testee.add("element to extract");
+            const result = testee.peek();
+            expect(result).to.equal("element to extract");
+        });
+        it("of three elements, should be the last deletet", () => {
+            const testee = new Stack();
+            testee.add("2");
+            testee.add("test")
+            testee.add(56);
+            testee.add("element to extract");
+            testee.poll();
+            const result = testee.peek();
+            expect(result).to.equal(56);
         });
     });
     describe("Factory", () => {
