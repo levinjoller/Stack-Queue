@@ -7,13 +7,17 @@ npm install
 ```
 You must also create a folder called build.
 
-## Used VS Code Extentions
+## Used VS-Code Extentions
 * Mocha Test Explorer
 * Test Explorer UI
 * ESLint
 
 ## NodeJS
 V10.16.3
+
+## Completed tasks
+* task 1 ✔
+* task 2 ✔
 
 ## Author
 * **Levin Joller**
