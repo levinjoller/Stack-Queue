@@ -13,3 +13,5 @@ export class DataStructureFactory{
         }
     }
 }
+
+export default DataStructureFactory;

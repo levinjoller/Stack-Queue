@@ -1,6 +1,24 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "outDir": "build"
-    }
+        "module": "commonjs",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "allowJs": true,
+        "outDir": "build",
+        "noEmitOnError": false
+    },
+    "paths": {
+        "*": [
+            "node_modules/*",
+        ]
+    },
+
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
 }
