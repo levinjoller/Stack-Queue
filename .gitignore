@@ -5,6 +5,6 @@ node_modules/
 .npm
 
 # Compiled files
-build/
+build/*
 lib/*.js
 

@@ -5,3 +5,5 @@ export interface IDataScructure {
     isEmpty(): boolean;
     peek(): any;
 }
+
+export default IDataScructure;

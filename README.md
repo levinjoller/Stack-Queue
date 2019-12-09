@@ -5,7 +5,7 @@ To install all dependencies for the project, this code must be executed in the s
 ```
 npm install
 ```
-You must also create a folder called build.
+First the command tsc must be executed in the console.
 
 ## Used VS-Code Extentions
 * Mocha Test Explorer
@@ -18,7 +18,7 @@ V10.16.3
 ## Completed tasks
 * task 1 ✔
 * task 2 ✔
-* task 3 (I tried) ❌
+* task 3 ✔ (not beautiful, but it works)
 
 ## Author
 * **Levin Joller**
